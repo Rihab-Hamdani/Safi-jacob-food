@@ -1,0 +1,17 @@
+Safi Jacob Food - site de commande (HTML, CSS, JavaScript simples, sans installation)
+
+Voir le site :
+  ouvrir un terminal dans ce dossier, puis :  python -m http.server   (ou  npx http-server)
+  ouvrir http://localhost:8000
+  (un double-clic sur index.html marche aussi)
+
+Modifier :
+  - menu, prix, suppléments : assets/menu.js
+  - photo de chaque catégorie : CAT_IMG en haut de assets/app.js
+  - téléphones des restos, frais de livraison (démo) : en haut de assets/app.js
+  - photos : assets/img/    vidéos : assets/video/
+Mettre en ligne : zipper le CONTENU de ce dossier (index.html + assets) et l'envoyer chez l'hébergeur.
+  - animation du haut (4 étapes en photos) : assets/xhero.js, images dans assets/img/x/
+    noms des couches : liste LAYERS en haut de xhero.js
+  - adresses, lien Itinéraire et villes livrées : BRANCHES en haut de assets/app.js
+  - vidéos de cuisine du tuto : assets/video/tuto-*.mp4 (+ .webm)

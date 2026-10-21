@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Safi Jacob Food</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Makloub, mlawi, tacos, chapati, pizza. Monté minute à Monastir et Lamta. Commandez en ligne.">
+<meta name="theme-color" content="#0E0C09">
+<!-- DEPLOY STEP: patch og:url and og:image with the live absolute URL -->
+<meta property="og:title" content="Safi Jacob Food">
+<meta property="og:description" content="Le makloub en sept couches. Commandez à Monastir ou Lamta.">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230E0C09'/%3E%3Cg fill='%23F5C330'%3E%3Cg transform='rotate(-40 32 32)'%3E%3Crect x='29.5' y='24' width='5' height='34' rx='2.5'/%3E%3Crect x='22' y='4' width='20' height='22' rx='4'/%3E%3C/g%3E%3Cg transform='rotate(40 32 32)'%3E%3Crect x='29.5' y='24' width='5' height='34' rx='2.5'/%3E%3Crect x='22' y='4' width='20' height='22' rx='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="env" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" aria-label="Navigation principale">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Safi Jacob Food, accueil"><img src="assets/img/logo.png" alt="Safi Jacob Food, since 2009"></a>
+    <div class="nav-links">
+      <a href="#tuto">Le tuto</a>
+      <a href="#carte">La carte</a>
+      <a href="#restos">Nos restos</a>
+    </div>
+    <button class="cart-btn" id="cartBtn" aria-label="Ouvrir le panier">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      <span id="cartLabel">Panier</span><span class="count" id="cartCount">0</span>
+    </button>
+    <a class="btn" href="#carte">Commander</a>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+  <!-- ───── HERO : makloub éclaté ───── -->
+  <section class="xhero" id="top" aria-labelledby="heroTitle">
+    <div class="xstage">
+      <div class="wrap xgrid">
+        <div class="xcopy">
+          <span class="mono kicker">Fast-food tunisien · depuis 2009</span>
+          <h1 class="h-xl" id="heroTitle">La faim n'attend <span class="hl">pas.</span></h1>
+          <div class="xsub" aria-live="polite">
+            <p class="lede xs-0 on"><span class="mono">01 · Pétrir</span>La pâte, étalée minute sur le comptoir.</p>
+            <p class="lede xs-1"><span class="mono">02 · Empiler</span>Harissa, mozzarella, chawarma, frites, salade.</p>
+            <p class="lede xs-2"><span class="mono">03 · Plier et dorer</span>Prêt. <span class="ar" lang="ar">بنّة ما كيفهاش</span></p>
+          </div>
+          <div class="xcta">
+            <a class="btn" href="#carte">Commander <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn ghost" href="#tuto">Voir le tuto</a>
+          </div>
+          <div class="xmeter" aria-hidden="true"><span class="mono">Étape</span><b id="xcount">1</b><span class="mono">/ 3</span><i><em id="xbar"></em></i></div>
+        </div>
+        <div class="xart" id="xart" role="img" aria-label="Le makloub se monte : la pâte, les couches d'ingrédients, puis le makloub plié et doré avec des frites">
+          <img class="xst" id="xDough" src="assets/img/x/dough.webp" alt="">
+          <div class="xlayers" id="xLayers"></div>
+          <div class="xglow" id="xGlow"></div>
+          <img class="xst" id="xFinal" src="assets/img/x/final.webp" alt="">
+        </div>
+      </div>
+      <div class="cue" id="cue" aria-hidden="true"><span class="mono" style="height:auto;width:auto;background:none;animation:none">Scrolle</span><span></span></div>
+    </div>
+  </section>
+
+  <div class="ticker torn" aria-hidden="true"><div class="track" id="ticker"></div></div>
+
+  <!-- ───── TUTO ───── -->
+  <section class="tuto" id="tuto" aria-labelledby="tutoTitle">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2 id="tutoTitle">Comment on monte <span class="stroke">un makloub</span></h2>
+        <p>Cinq gestes, toujours les mêmes, devant vous au comptoir. Voilà ce qui se passe entre votre commande et la première bouchée.</p>
+      </div>
+      <div class="tuto-grid">
+        <div class="tuto-visual" aria-hidden="true">
+          <figure class="on" data-s="0"><video muted loop playsinline preload="none" poster="assets/video/tuto-petrir.jpg" data-src="assets/video/tuto-petrir.mp4"></video></figure>
+          <figure data-s="1"><video muted loop playsinline preload="none" poster="assets/video/tuto-saucer.jpg" data-src="assets/video/tuto-saucer.mp4"></video></figure>
+          <figure data-s="2"><video muted loop playsinline preload="none" poster="assets/video/tuto-garnir.jpg" data-src="assets/video/tuto-garnir.mp4"></video></figure>
+          <figure data-s="3"><video muted loop playsinline preload="none" poster="assets/video/tuto-four.jpg" data-src="assets/video/tuto-four.mp4"></video></figure>
+          <figure data-s="4"><img src="assets/img/servir.webp" alt=""></figure>
+          <span class="vtag mono">Filmé chez Safi Jacob</span>
+          <div class="stepnum" id="stepnum">01</div>
+          <div class="frame"></div>
+        </div>
+        <ol class="steps" id="steps" style="list-style:none;margin:0">
+          <span class="rail" aria-hidden="true"><b></b></span>
+          <li class="step on"><span class="dot" aria-hidden="true"></span>
+            <div class="mob-img"><video muted loop playsinline preload="none" poster="assets/video/tuto-petrir.jpg" data-src="assets/video/tuto-petrir.mp4" aria-label="La pâte pétrie à la main"></video></div>
+            <span class="mono">Étape 01</span><h3>Pétrir</h3>
+            <p>La pâte est travaillée sur place, à la main, puis étalée en un grand disque fin.</p>
+            <div class="tags"><span>Pâte maison</span><span>Étalée minute</span></div></li>
+          <li class="step"><span class="dot" aria-hidden="true"></span>
+            <div class="mob-img"><video muted loop playsinline preload="none" poster="assets/video/tuto-saucer.jpg" data-src="assets/video/tuto-saucer.mp4" aria-label="La sauce versée sur les pâtes"></video></div>
+            <span class="mono">Étape 02</span><h3>Saucer</h3>
+            <p>Une couche de harissa, un trait de mayonnaise, puis la mozzarella sur toute la surface.</p>
+            <div class="tags"><span>Harissa</span><span>Mayonnaise</span><span>Mozzarella</span></div></li>
+          <li class="step"><span class="dot" aria-hidden="true"></span>
+            <div class="mob-img"><video muted loop playsinline preload="none" poster="assets/video/tuto-garnir.jpg" data-src="assets/video/tuto-garnir.mp4" aria-label="La garniture posée sur la pâte"></video></div>
+            <span class="mono">Étape 03</span><h3>Garnir</h3>
+            <p>Chawarma, escalope ou cordon bleu, oignon sauté, laitue, frites. Vous choisissez, on charge.</p>
+            <div class="tags"><span>Chawarma</span><span>Escalope</span><span>Frites</span><span>Oignon sauté</span></div></li>
+          <li class="step"><span class="dot" aria-hidden="true"></span>
+            <div class="mob-img"><video muted loop playsinline preload="none" poster="assets/video/tuto-four.jpg" data-src="assets/video/tuto-four.mp4" aria-label="Le makloub plié, puis doré au four"></video></div>
+            <span class="mono">Étape 04</span><h3>Plier et dorer</h3>
+            <p>On referme, on passe au four. La pâte gonfle, dore et croustille sur les bords.</p>
+            <div class="bake" id="bake">
+              <button class="hold" id="hold" aria-label="Maintenir pour dorer le makloub" aria-describedby="bakeTxt">
+                <svg viewBox="0 0 132 132" aria-hidden="true"><circle class="bg" cx="66" cy="66" r="60"/><circle class="fg" cx="66" cy="66" r="60"/></svg>
+                <span class="core" aria-hidden="true">Dorer</span>
+              </button>
+              <div id="bakeTxt"><h4 class="todo">À vous de dorer</h4><p class="todo">Restez appuyé sur le cercle jusqu'à ce qu'il soit plein.</p><h4 class="done">Doré, croustillant.</h4><p class="done">Il ne manque plus que vous. Choisissez votre makloub plus bas.</p></div>
+            </div></li>
+          <li class="step"><span class="dot" aria-hidden="true"></span>
+            <div class="mob-img"><img src="assets/img/servir.webp" alt="Makloub grillé coupé en deux avec des frites" loading="lazy"></div>
+            <span class="mono">Étape 05</span><h3>Servir chaud</h3>
+            <p>Coupé en deux, servi avec les frites. À emporter, ou livré chez vous.</p>
+            <a class="btn" href="#carte" style="margin-top:22px;align-self:flex-start">Commander le mien <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <p class="insta">Plus de vidéos de la cuisine sur Instagram : <a href="https://www.instagram.com/p/CgAXMY9OAkF/" target="_blank" rel="noopener">vidéo 1</a> · <a href="https://www.instagram.com/p/DC9FIyjsHv7/" target="_blank" rel="noopener">vidéo 2</a></p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CARTE ───── -->
+  <section class="sec" id="carte" aria-labelledby="carteTitle" style="padding-top:60px">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2 id="carteTitle">La carte</h2>
+        <p>Les prix du menu affiché en restaurant. Choisissez, personnalisez, commandez.</p>
+      </div>
+    </div>
+    <div class="menu-bar">
+      <div class="wrap">
+        <div class="chips" id="chips" role="tablist" aria-label="Catégories"></div>
+        <label class="search"><span class="sr">Rechercher un plat</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Chawarma, kebda, thon…" autocomplete="off">
+        </label>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="cat-head" id="catHead"></div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+
+      <div class="supp rv">
+        <div><span class="mono" style="color:var(--accent)">À ajouter à tout</span><h3>Les suppléments</h3><p style="color:var(--text-secondary);margin:10px 0 0">Les prix du panneau en restaurant. À ajouter dans n'importe quel plat, depuis sa fiche.</p></div>
+        <div class="supp-list" id="suppList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── RESTOS ───── -->
+  <section class="sec" id="restos" aria-labelledby="restoTitle">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <h2 id="restoTitle">Deux adresses. <span class="hl">Une carte.</span></h2>
+        <p>Choisissez le resto le plus proche. Le menu et les prix sont les mêmes.</p>
+      </div>
+      <div class="branches" id="branches"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="ticker torn" aria-hidden="true"><div class="track" id="ticker2"></div></div>
+  <div class="wrap">
+    <div class="foot">
+      <div><img class="logo" src="assets/img/logo.png" alt="Safi Jacob Food"><img class="tag" src="assets/img/tagline.png" alt="بنّة ما كيفهاش"></div>
+      <div id="footPhones"></div>
+      <div class="soc">
+        <a href="https://www.facebook.com/Safi.JacobFood/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8.5V6.8c0-.8.5-1.3 1.4-1.3H17V2.2h-2.6C11.6 2.2 10.4 4 10.4 6.4v2.1H8v3.4h2.4V22H14V11.9h2.6l.4-3.4H14Z"/></svg></a>
+        <a href="https://www.instagram.com/safi.jacobfood/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+    <p class="legal">Prototype de démonstration. Les commandes ne sont pas transmises au restaurant. Prix d'après le menu affiché, à confirmer. Certaines photos de plats sont des images d'illustration.</p>
+  </div>
+</footer>
+
+<!-- dialogs -->
+<div class="dlg sheet" id="dlgProduct" aria-hidden="true"><div class="back" data-close></div><div class="panel" role="dialog" aria-modal="true" aria-labelledby="pdTitle" tabindex="-1" id="pdPanel"></div></div>
+<div class="dlg side" id="dlgCart" aria-hidden="true"><div class="back" data-close></div><div class="panel" role="dialog" aria-modal="true" aria-label="Votre panier" tabindex="-1" id="cartPanel"></div></div>
+<div class="dlg full bd" id="dlgBranch" aria-hidden="true"><div class="panel" role="dialog" aria-modal="true" aria-labelledby="bdTitle" tabindex="-1">
+  <div class="bd-inner">
+    <div class="bd-top"><img src="assets/img/logo.png" alt="Safi Jacob Food"><button class="icon-btn" data-close aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <h2 id="bdTitle">D'où vous <span class="hl">commandez ?</span></h2>
+    <div class="branches" id="branchesDlg"></div>
+  </div></div></div>
+<div class="dlg full" id="dlgCheckout" aria-hidden="true"><div class="panel" role="dialog" aria-modal="true" aria-label="Finaliser la commande" tabindex="-1" id="coPanel"></div></div>
+
+<div class="mbar" id="mbar"><button id="mbarBtn"><span id="mbarTxt">Voir le panier</span><span id="mbarTot"></span></button></div>
+<div class="toast" id="toast" role="status" aria-live="polite"><b id="toastTxt"></b><button id="toastBtn">Voir le panier</button></div>
+
+<script src="assets/menu.js"></script>
+<script src="assets/xhero.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
